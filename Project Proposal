@@ -1,0 +1,40 @@
+tock Management System
+Emon Hossain
+ID:223071044
+Batch: 31st
+Group: (A)
+Overview
+Efficient stock management is essential for businesses to accurately monitor inventory, prevent shortages, and optimize overall sales performance. This project proposes developing a desktop-based Stock Management System using JavaFX for the front end and MySQL for the backend data management.
+The system will enable small businesses to manage their inventory through an intuitive user interface, offering product management.
+Motivation
+Inventory mismanagement can lead to operational inefficiencies, lost sales, and customer dissatisfaction. By implementing a structured, automated stock management system, businesses can streamline their operations, maintain optimal stock levels, and enhance decision-making based on real-time data insights.
+This project fulfills the requirements of class assignments by integrating key technical elements:
+JavaFX UI using FXML and SceneBuilder
+MySQL database connectivity
+ Multi-dashboard architecture (Login, Signup, Profile, Admin Panel)
+ Consistent GitHub version control with regular commits
+
+
+Admin Dashboard
+User Authentication
+Signup: Allows new users to register with their name, email, and password.
+Login: Secure login functionality with input validation.
+Profile Management: Users can view and update their personal information.
+
+Admin Dashboard
+Add new products (ID, Name, Price, Quantity, Category)
+Edit or delete existing product details
+Database Design (MySQL)
+
+Key tables and fields:
+users (id, name, email, password)
+
+
+products (id, name, price, quantity, category)
+
+
+sales (sale_id, product_id, quantity, date)
+
+5. Conclusion
+This project aims to deliver a functional, scalable, and user-friendly stock management system that meets academic requirements while addressing real-world business needs. With robust features and professional-grade design, the application will provide essential inventory control tools for small businesses
+
