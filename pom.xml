@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<root>
+    <dependency>
+  <groupId>com.zaxxer</groupId>
+  <artifactId>HikariCP</artifactId>
+  <version>5.0.1</version>
+</dependency>
+
+</root>
+

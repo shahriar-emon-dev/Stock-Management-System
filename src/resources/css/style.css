@@ -1,0 +1,280 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 9, 2025, 12:01:42 AM
+    Author     : Asus
+*/
+
+/* Root Variables for Consistent Theming */
+.root {
+    -fx-primary-color: #2E86AB;
+    -fx-primary-dark: #1A5F7A;
+    -fx-secondary-color: #A23B72;
+    -fx-accent-color: #F18F01;
+    -fx-success-color: #57C4E5;
+    -fx-error-color: #E74C3C;
+    -fx-text-primary: #2C3E50;
+    -fx-text-secondary: #7F8C8D;
+    -fx-background-light: #F8F9FA;
+    -fx-background-white: #FFFFFF;
+    -fx-border-color: #E1E8ED;
+    -fx-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Main Container */
+.main-container {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Left Panel - Branding */
+.left-panel {
+    -fx-background-color: linear-gradient(135deg, #2E86AB 0%, #1A5F7A 100%);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 2, 0);
+}
+
+.brand-title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-padding: 10 0 5 0;
+}
+
+.brand-subtitle {
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+/* Right Panel - Form */
+.right-panel {
+    -fx-background-color: -fx-background-white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, -5, 0);
+}
+
+/* Form Header */
+.form-title {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-weight: bold;
+    -fx-font-size: 28px;
+}
+
+.form-subtitle {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 14px;
+}
+
+/* Form Container */
+.form-container {
+    -fx-padding: 20;
+    -fx-max-width: 400px;
+}
+
+/* Field Labels */
+.field-label {
+    -fx-text-fill: -fx-text-primary;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Custom Text Fields */
+.custom-text-field {
+    -fx-background-color: -fx-background-white;
+    -fx-border-color: -fx-border-color;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-prompt-text-fill: -fx-text-secondary;
+}
+
+.custom-text-field:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-effect: dropshadow(gaussian, rgba(46, 134, 171, 0.3), 8, 0, 0, 0);
+}
+
+.custom-text-field:error {
+    -fx-border-color: -fx-error-color;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.3), 8, 0, 0, 0);
+}
+
+/* Custom ComboBox */
+.custom-combo-box {
+    -fx-background-color: -fx-background-white;
+    -fx-border-color: -fx-border-color;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-prompt-text-fill: -fx-text-secondary;
+}
+
+.custom-combo-box:focused {
+    -fx-border-color: -fx-primary-color;
+    -fx-effect: dropshadow(gaussian, rgba(46, 134, 171, 0.3), 8, 0, 0, 0);
+}
+
+.custom-combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.custom-combo-box .arrow {
+    -fx-background-color: -fx-text-secondary;
+}
+
+/* Primary Button */
+.primary-button {
+    -fx-background-color: linear-gradient(135deg, -fx-primary-color 0%, -fx-primary-dark 100%);
+    -fx-text-fill: white;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 30px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 2);
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(135deg, -fx-primary-dark 0%, -fx-primary-color 100%);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 12, 0, 0, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.primary-button:pressed {
+    -fx-background-color: -fx-primary-dark;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 6, 0, 0, 1);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Link Button */
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primary-color;
+    -fx-border-color: transparent;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.link-button:hover {
+    -fx-text-fill: -fx-primary-dark;
+}
+
+.link-button:pressed {
+    -fx-text-fill: -fx-primary-dark;
+}
+
+/* Message Label */
+.message-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+
+.message-label.success {
+    -fx-text-fill: #27AE60;
+    -fx-background-color: rgba(39, 174, 96, 0.1);
+    -fx-border-color: #27AE60;
+    -fx-border-width: 1px;
+}
+
+.message-label.error {
+    -fx-text-fill: -fx-error-color;
+    -fx-background-color: rgba(231, 76, 60, 0.1);
+    -fx-border-color: -fx-error-color;
+    -fx-border-width: 1px;
+}
+
+/* Footer Container */
+.footer-container {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+    -fx-border-color: -fx-border-color;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.footer-text {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-container {
+        -fx-pref-width: 800px;
+    }
+    
+    .left-panel {
+        -fx-pref-width: 350px;
+    }
+    
+    .right-panel {
+        -fx-pref-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        -fx-pref-width: 600px;
+    }
+    
+    .left-panel {
+        -fx-pref-width: 0px;
+        -fx-visible: false;
+    }
+    
+    .right-panel {
+        -fx-pref-width: 600px;
+    }
+    
+    .form-container {
+        -fx-padding: 15px;
+    }
+}
+
+/* Animations */
+.primary-button {
+    -fx-transition: all 0.3s ease;
+}
+
+.custom-text-field {
+    -fx-transition: all 0.3s ease;
+}
+
+.custom-combo-box {
+    -fx-transition: all 0.3s ease;
+}
+
+/* Accessibility */
+.custom-text-field:focused,
+.custom-combo-box:focused,
+.primary-button:focused {
+    -fx-effect: dropshadow(gaussian, rgba(46, 134, 171, 0.5), 10, 0, 0, 0);
+}
+
+/* Loading State */
+.primary-button:disabled {
+    -fx-background-color: -fx-text-secondary;
+    -fx-opacity: 0.6;
+    -fx-cursor: default;
+}
+
+/* Validation States */
+.field-error {
+    -fx-border-color: -fx-error-color !important;
+}
+
+.field-success {
+    -fx-border-color: #27AE60 !important;
+}

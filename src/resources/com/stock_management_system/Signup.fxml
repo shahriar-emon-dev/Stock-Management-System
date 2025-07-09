@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="stock_management_system.controller.SignupController"
+            prefWidth="900" prefHeight="700"
+            styleClass="main-container">
+
+    <!-- Left Branding Panel -->
+    <VBox layoutX="0" layoutY="0" prefWidth="300" prefHeight="700"
+          style="-fx-background-color: #F5F5F5;" alignment="CENTER" spacing="20">
+        <padding>
+            <Insets top="40" bottom="40" left="20" right="20"/>
+        </padding>
+        <Label text="Stock Management" style="-fx-font-size: 24; -fx-text-fill: #2196F3;"/>
+        <Label text="Inventory made easy" style="-fx-font-size: 14; -fx-text-fill: #666666;"/>
+    </VBox>
+
+    <!-- Signup Form Panel -->
+    <VBox layoutX="300" layoutY="0" prefWidth="600" prefHeight="700"
+          alignment="TOP_CENTER" spacing="15" style="-fx-background-color: white;">
+        <padding>
+            <Insets top="40" bottom="20" left="40" right="40"/>
+        </padding>
+
+        <!-- Title -->
+        <Label text="Create Account"
+               style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #2196F3;"/>
+
+        <!-- Personal Names -->
+        <HBox spacing="15" prefWidth="520">
+            <VBox spacing="5" HBox.hgrow="ALWAYS">
+                <Label text="First Name *"/>
+                <TextField fx:id="firstNameField" promptText="First name" prefHeight="40"/>
+            </VBox>
+            <VBox spacing="5" HBox.hgrow="ALWAYS">
+                <Label text="Last Name *"/>
+                <TextField fx:id="lastNameField" promptText="Last name" prefHeight="40"/>
+            </VBox>
+        </HBox>
+
+        <!-- Username -->
+        <VBox spacing="5" prefWidth="520">
+            <Label text="Username *"/>
+            <TextField fx:id="usernameField" promptText="Username" prefHeight="40"/>
+        </VBox>
+
+        <!-- Email -->
+        <VBox spacing="5" prefWidth="520">
+            <Label text="Email *"/>
+            <TextField fx:id="emailField" promptText="Email address" prefHeight="40"/>
+        </VBox>
+
+        <!-- Phone -->
+        <VBox spacing="5" prefWidth="520">
+            <Label text="Phone"/>
+            <TextField fx:id="phoneField" promptText="Phone number" prefHeight="40"/>
+        </VBox>
+
+        <!-- Passwords -->
+        <HBox spacing="15" prefWidth="520">
+            <VBox spacing="5" HBox.hgrow="ALWAYS">
+                <Label text="Password *"/>
+                <PasswordField fx:id="passwordField" promptText="Password" prefHeight="40"/>
+            </VBox>
+            <VBox spacing="5" HBox.hgrow="ALWAYS">
+                <Label text="Confirm Password *"/>
+                <PasswordField fx:id="confirmPasswordField" promptText="Confirm password" prefHeight="40"/>
+            </VBox>
+        </HBox>
+
+        <!-- Role -->
+        <VBox spacing="5" prefWidth="520">
+            <Label text="Role *"/>
+            <ComboBox fx:id="roleComboBox" promptText="Select role" prefHeight="40"/>
+        </VBox>
+
+        <!-- Address -->
+        <VBox spacing="5" prefWidth="520">
+            <Label text="Address"/>
+            <TextField fx:id="addressField" promptText="Address (optional)" prefHeight="40"/>
+        </VBox>
+
+        <!-- Message Label -->
+        <Label fx:id="messageLabel" wrapText="true" visible="false" prefWidth="520"/>
+
+        <!-- Signup Button -->
+        <Button fx:id="signupButton"
+                text="Create Account"
+                onAction="#handleSignup"
+                prefWidth="200" prefHeight="45"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+        <!-- Already have an account? -->
+        <HBox spacing="5" alignment="CENTER">
+            <Label text="Already have an account?"/>
+            <Button fx:id="loginButton"
+                    text="Login Here"
+                    onAction="#handleGoToLogin"
+                    style="-fx-background-color: transparent; -fx-text-fill: #2196F3; -fx-underline: true;"/>
+        </HBox>
+    </VBox>
+</AnchorPane>
