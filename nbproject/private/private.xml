@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/JFX/Stock_Management_System/src/stock_management_system/controller/LoginController.java</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/stock_management_system/controller/SignupController.java</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/stock_management_system/DATA/DatabaseConnection.java</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/resources/com/stock_management_system/Login.fxml</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/resources/com/stock_management_system/AdminDashboard.fxml</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/resources/css/style.css</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/resources/com/stock_management_system/Signup.fxml</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/stock_management_system/DATA/DatabaseTest.java</file>
+            <file>file:/E:/JFX/Stock_Management_System/src/stock_management_system/main.java</file>
+        </group>
+    </open-files>
+</project-private>
