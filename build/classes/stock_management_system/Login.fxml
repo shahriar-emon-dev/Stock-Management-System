@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock_management_system.LoginController">
+    <VBox alignment="CENTER" spacing="20"
+          layoutX="150" layoutY="100"
+          prefWidth="600" prefHeight="500"
+          style="
+            -fx-background-color: rgba(255,255,255,0.85);
+            -fx-background-radius: 12;
+            -fx-padding: 30;
+            -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.25), 10,0,0,2);
+          ">
+
+        <!-- Logo -->
+<!--        <ImageView fx:id="logoImage"
+                   fitWidth="100" fitHeight="100"
+                   preserveRatio="true"
+                   pickOnBounds="true"
+                   style="-fx-cursor: hand;"
+                   fx:src="file:Image/Stock Management System.png"/>  Use fx:src for image path -->
+
+        <!-- Title -->
+        <Label text="Welcome to Stock Manager"
+               style=" 
+                  -fx-font-size: 26px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #333333; /* same as the Admin Dashboard */
+               "/>
+
+        <!-- Input grid -->
+        <GridPane hgap="15" vgap="20">
+            <padding><Insets top="10" bottom="10"/></padding>
+
+            <!-- Username -->
+            <Label text="Username *"
+                   GridPane.rowIndex="0" GridPane.columnIndex="0"
+                   style="-fx-font-size: 14px; -fx-text-fill: #555555;"/>
+            <TextField fx:id="usernameField"
+                       promptText="Enter your username"
+                       GridPane.rowIndex="0" GridPane.columnIndex="1"
+                       style=" 
+                         -fx-background-radius: 6;
+                         -fx-border-radius: 6;
+                         -fx-border-color: #cccccc;
+                         -fx-padding: 8 10;
+                       "/>
+
+            <!-- Password -->
+            <Label text="Password *"
+                   GridPane.rowIndex="1" GridPane.columnIndex="0"
+                   style="-fx-font-size: 14px; -fx-text-fill: #555555;"/>
+            <PasswordField fx:id="passwordField"
+                           promptText="Enter your password"
+                           GridPane.rowIndex="1" GridPane.columnIndex="1"
+                           style=" 
+                             -fx-background-radius: 6;
+                             -fx-border-radius: 6;
+                             -fx-border-color: #cccccc;
+                             -fx-padding: 8 10;
+                           "/>
+        </GridPane>
+
+        <!-- Status message -->
+        <Label fx:id="messageLabel"
+               text=""
+               wrapText="true"
+               visible="false"
+               style=" 
+                  -fx-font-size: 13px;
+                  -fx-text-fill: #D32F2F; /* same red used in Admin Dashboard for error messages */
+                  -fx-padding: 0 10 0 10;
+               "/>
+
+        <!-- Login button -->
+        <Button fx:id="loginButton"
+                text="Log In"
+                onAction="#handleLogin"
+                mnemonicParsing="false"
+                style=" 
+                  -fx-background-color: #4CAF50; /* same green color as in Admin Dashboard */
+                  -fx-text-fill: white;
+                  -fx-font-size: 16px;
+                  -fx-font-weight: bold;
+                  -fx-background-radius: 6;
+                  -fx-padding: 10 20;
+                "/>
+
+        <!-- Signup link -->
+        <HBox alignment="CENTER" spacing="5">
+            <Label text="Don't have an account?"
+                   style="-fx-text-fill: #555555; -fx-font-size: 13px;"/>
+            <Hyperlink fx:id="signupRedirectButton"
+                       text="Sign up here"
+                       onAction="#handleGoToSignup"
+                       style=" 
+                          -fx-text-fill: #4e54c8; /* same blue color used for links in Admin Dashboard */
+                          -fx-font-size: 13px;
+                          -fx-underline: false;
+                       ">
+                <padding><Insets bottom="2"/></padding>
+            </Hyperlink>
+        </HBox>
+
+    </VBox>
+</AnchorPane>
