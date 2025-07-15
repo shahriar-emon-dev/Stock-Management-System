@@ -17,7 +17,7 @@ public class DB {
     // Establish a database connection
     public static Connection getConnection() {
         if (connection == null || !isConnectionValid()) {
-            try (FileInputStream input = new FileInputStream("config.properties")) { // Path to your config file
+            try (FileInputStream input = new FileInputStream("src/config.properties")) { // Path to your config file
                 Properties properties = new Properties();
                 properties.load(input);
                 

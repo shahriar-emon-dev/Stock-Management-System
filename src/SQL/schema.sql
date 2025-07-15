@@ -2,15 +2,22 @@
 -- Users Table (for login, signup, and roles)
 -- -------------------------------------------
 USE Stock_Management_System;
+-- Create the users table with the necessary columns
 CREATE TABLE IF NOT EXISTS users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL,  -- Use hashed passwords for security
-    role ENUM('admin', 'staff') DEFAULT 'staff', -- Using 'admin' and 'staff' roles
+    password VARCHAR(255) NOT NULL,  -- Store plain passwords (removed 'password_hash')
+    role ENUM('admin', 'staff') DEFAULT 'staff',
     email VARCHAR(255) NOT NULL UNIQUE,
+    phone VARCHAR(20),  -- Add phone column
+    address TEXT,       -- Add address column
+    first_name VARCHAR(255), -- First name column
+    last_name VARCHAR(255),  -- Last name column
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+
 
 -- -------------------------------------------
 -- Categories Table (for product categorization)

@@ -16,6 +16,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
 import util.DB; // Import the DB class for database connection
 
 public class SignupController implements Initializable {
@@ -62,7 +63,7 @@ public class SignupController implements Initializable {
         String username = usernameField.getText();
         String email = emailField.getText();
         String phone = phoneField.getText();
-        String password = passwordField.getText();
+        String password = passwordField.getText();  // Use plain password directly
         String confirmPassword = confirmPasswordField.getText();
         String role = roleComboBox.getValue(); // Get the selected role
         String address = addressField.getText();
@@ -90,7 +91,7 @@ public class SignupController implements Initializable {
             statement.setString(3, username);
             statement.setString(4, email);
             statement.setString(5, phone);
-            statement.setString(6, password);
+            statement.setString(6, password);  // Use plain password (no hashing)
             statement.setString(7, role);
             statement.setString(8, address);
 

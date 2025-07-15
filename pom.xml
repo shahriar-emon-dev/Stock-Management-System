@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <!-- The version of the POM model being used -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Group ID and Artifact ID -->
+    <groupId>com.example</groupId>
+    <artifactId>Stock_Management_System</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Packaging type for the project (jar, war, etc.) -->
+    <packaging>jar</packaging>
+
+    <!-- Dependencies -->
+    <dependencies>
+        <!-- BCrypt Dependency -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+    </dependencies>
+</project>
